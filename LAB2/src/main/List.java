@@ -43,8 +43,6 @@ public class List extends JDialog {
         Integer scholarship = scholarship(average, budjet, has2(marksIntArr)); // calculate scholarship
         //append results to text pane
         Results.append("Surname: " + surname + " Marks: " + Arrays.toString(marksIntArr) + "\nScholarship: " + scholarship + "\n");
-
-
     }
     public Integer from100to5(int mark){
         if (mark >= 90) return 5;
