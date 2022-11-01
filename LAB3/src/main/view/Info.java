@@ -9,12 +9,13 @@ public class Info extends JFrame {
     private JPanel mainPanel;
     private JTextArea programDeveloper;
 
-    private URL url = Info.class.getResource("/resource/download.jpg");
+    private URL url = Info.class.getResource("/developer.jpg");
 
-    private BufferedImage img = null;
+    private BufferedImage img ;
 
     {
         try {
+            assert url != null;
             img = javax.imageio.ImageIO.read(url);
         } catch (java.io.IOException e) {
             e.printStackTrace();
@@ -28,11 +29,11 @@ public class Info extends JFrame {
 
         g2.drawImage(scaledImage, 0, 0, this);}
 
+
+
     public Info() {
         super("Info");
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setContentPane(mainPanel);
-        this.pack();
         this.setVisible(true);
         this.setSize(500, 500);
         this.setLocationRelativeTo(null);

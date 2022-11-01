@@ -50,7 +50,8 @@ public class MainView extends JFrame {
         Info.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Info info = new Info();
+
+                onInfoClick();
             }
         });
         AddWoodMenu.addActionListener(new ActionListener() {
@@ -72,6 +73,12 @@ public class MainView extends JFrame {
             }
         });
 
+
+    }
+
+    private void onInfoClick() {
+        Info info = new Info();
+        info.setVisible(true);
 
     }
 
