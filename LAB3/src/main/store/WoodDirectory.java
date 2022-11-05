@@ -2,46 +2,45 @@ package store;
 
 import model.Wood;
 
-import java.util.Arrays;
 
-public class WoodDirectory {
-    private Wood[] woods = new Wood[3];
-    private int count = 0;
+public class WoodDirectory  extends AbstractStore {
 
-    {
-        woods[count++] = new Wood(0, "Oak", 1000);
-        woods[count++] = new Wood(1, "Beech", 750);
-        woods[count++] = new Wood(2, "Pine", 800);
-    }
-
-    public Wood[] getWoods() {
-        return Arrays.copyOf(woods, count);
-    }
+//    {
+//        arr[0] = new Wood(0, "Oak", 1000);
+//        arr[1] = new Wood(1, "Beech", 750);
+//        arr[2] = new Wood(2, "Pine", 800);
+//        count = 3;
+//    }
 
 
     public Wood getWoodById(int id) {
         for (int i = 0; i < count; i++) {
-            if (woods[i].getId() == id) {
-                return woods[i];
+            if (((Wood) arr[i]).getId() == id) {
+                return (Wood) arr[i];
             }
         }
         return null;
 
     }
 
-    public boolean addWood(Wood wood) {
+    public boolean add(Wood wood) {
         if (getWoodById(wood.getId()) != null) { // check if wood with such id already exists
             return false;
         }
-        if (count == woods.length) { // check if array is full
-            woods = Arrays.copyOf(woods, count + count / 2);
-        }
-        woods[count++] = wood; // add wood to array
+        super.add(wood);
         return true;
     }
 
     public String toString() {
-        return "WoodDirectory [woods=" + Arrays.toString(woods) + "]";
+        StringBuilder result = new StringBuilder();
+        result.append("WoodDirectory: \n");
+        result.append(super.toString());
+        return result.toString();
     }
 
+    {
+        this.add(new Wood(0, "Oak", 1000));
+        this.add(new Wood(1, "Beech", 750));
+        this.add(new Wood(2, "Pine", 800));
+    }
 }

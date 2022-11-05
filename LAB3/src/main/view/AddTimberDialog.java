@@ -64,7 +64,7 @@ public class AddTimberDialog extends JDialog {
     }
 
     public void setWoodDirectory(WoodDirectory wd) {
-        ComboBoxModel<Object> model = new DefaultComboBoxModel<>(wd.getWoods());
+        ComboBoxModel<Object> model = new DefaultComboBoxModel<>(wd.get());
         WoodSelect.setModel(model);
     }
 
