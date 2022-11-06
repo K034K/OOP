@@ -1,6 +1,6 @@
 package model;
 
-public class Cylinder extends AbstarctForm {
+public class Cylinder extends AbstractForm {
     private float radius;
     private float height;
 
@@ -29,6 +29,10 @@ public class Cylinder extends AbstarctForm {
 
     public float volume() {
         return (float) (Math.PI * Math.pow(radius, 2) * height);
+    }
+
+    public String toString() {
+        return "Cylinder: " + wood + ", radius: " + radius + ", height: " + height;
     }
 }
 

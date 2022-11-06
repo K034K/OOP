@@ -3,8 +3,9 @@ package model;
 public class Waste implements IWeight {
     private float weight;
 
-    public Waste(float weight) {
-        this.weight = weight;
+    public Waste(float weight) throws Exception {
+        super();
+        setWeight(weight);
     }
 
     public float getWeight() {
@@ -12,7 +13,11 @@ public class Waste implements IWeight {
     }
 
 
-    public void setWeight(float weight) {
+    public void setWeight(float weight) throws Exception {
+        if (weight < 20 || weight > 100) {
+            throw new Exception(weight + " is not a valid weight for waste" +
+                    " (must be between 20 and 100)");
+        }
         this.weight = weight;
     }
 

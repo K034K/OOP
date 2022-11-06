@@ -1,6 +1,6 @@
 package model;
 
-public class Timber extends AbstarctForm {
+public class Timber extends AbstractForm {
 
     private float length;
     private float width;

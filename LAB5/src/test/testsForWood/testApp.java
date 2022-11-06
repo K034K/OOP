@@ -8,6 +8,8 @@ import model.Waste;
 import store.ProductStore;
 import store.WoodDirectory;
 
+import javax.swing.*;
+
 import static java.lang.Math.pow;
 import static org.junit.Assert.assertEquals;
 
@@ -25,29 +27,43 @@ public class testApp {
     private void startApp() {
 
         //testing Timber
-        ps.add(new Timber(wd.getWoodById(0), 5, 0.4f, 0.2f));
-        ps.add(new Timber(wd.getWoodById(1), 12, 0.5f, 0.2f));
+        try {
+            ps.add(new Timber(wd.getWoodById(0), 5, 0.4f, 0.2f));
+            ps.add(new Timber(wd.getWoodById(1), 12, 0.5f, 0.2f));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+
         assertEquals(2, ps.getCount());
         assertEquals(1300.0f, ps.calculateWeight(), 0.0001);
         assertEquals(400.0f, ((IWeight) ps.get()[0]).weight(), 0.001);
         assertEquals(900.0f, ((IWeight) ps.get()[1]).weight(), 0.001);
 
         //testing Cylinder
-        ps.add(new Cylinder(wd.getWoodById(1), 0.5f, 4.0f));
-        ps.add(new Cylinder(wd.getWoodById(2), 0.4f, 5.0f));
+        try {
+            ps.add(new Cylinder(wd.getWoodById(1), 0.5f, 4.0f));
+            ps.add(new Cylinder(wd.getWoodById(2), 0.4f, 4.9f));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
         assertEquals(4, ps.getCount());
         float cyl1Weight = (float) (pow(0.5, 2) * Math.PI * 4.0f * wd.getWoodById(1).getDensity());
-        float cyl2Weight = (float) (pow(0.4, 2) * Math.PI * 5.0f * wd.getWoodById(2).getDensity());
+        float cyl2Weight = (float) (pow(0.4, 2) * Math.PI * 4.9f * wd.getWoodById(2).getDensity());
         assertEquals(cyl1Weight, ((IWeight) ps.get()[2]).weight(), 0.001);
         assertEquals(cyl2Weight, ((IWeight) ps.get()[3]).weight(), 0.001);
         assertEquals(1_300.0f + cyl1Weight + cyl2Weight, ps.calculateWeight(), 0.0001);
 
 
         //testing waste
-        ps.add(new Waste(100));
-        ps.add(new Waste(200));
+        try {
+            ps.add(new Waste(40));
+            ps.add(new Waste(80));
+        }catch (Exception e){
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+
         assertEquals(6, ps.getCount());
-        assertEquals(1300.0f + cyl1Weight + cyl2Weight + 300, ps.calculateWeight(), 0.0001);
+        assertEquals(1300.0f + cyl1Weight + cyl2Weight + 120, ps.calculateWeight(), 0.0001);
 
         System.out.println(ps);
         System.out.println("Total weight: " + ps.calculateWeight());

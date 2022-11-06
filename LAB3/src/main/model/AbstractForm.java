@@ -1,11 +1,10 @@
 package model;
 
-public abstract class AbstarctForm implements IWeight {
+public abstract class AbstractForm implements IWeight {
     protected Wood wood;
 
 
-
-    public AbstarctForm(Wood wood) {
+    public AbstractForm(Wood wood) {
         this.wood = wood;
     }
 
