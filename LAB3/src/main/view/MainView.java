@@ -4,6 +4,7 @@ import javax.swing.*;
 
 import java.awt.event.*;
 
+import model.Cylinder;
 import model.Timber;
 import model.Wood;
 import store.*;
@@ -23,6 +24,7 @@ public class MainView extends JFrame {
     private JMenu AddProductMenu;
     private JMenuItem AddTimberMenu;
     private JMenuItem Info;
+    private JMenuItem AddCylinderMenu;
 
     private WoodDialog woodDialog;
 
@@ -40,6 +42,10 @@ public class MainView extends JFrame {
         this.setSize(500, 500);
         this.setLocationRelativeTo(null);
         this.setTitle("MainView");
+
+        AddProductMenu.add(AddTimberMenu);
+        AddProductMenu.add(AddCylinderMenu);
+        AddProductMenu.setText("Add Product");
 
         ShowWoodMenu.addActionListener(new ActionListener() {
             @Override
@@ -72,8 +78,27 @@ public class MainView extends JFrame {
                 showAllProducts();
             }
         });
+        AddCylinderMenu.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                addCylinderDialog();
+            }
+        });
 
 
+
+    }
+
+    private void addCylinderDialog() {
+        addCylinder ac = new addCylinder();
+        ac.setWoodDirectory(wd);
+        ac.setVisible(true);
+        Cylinder cylinder = ac.getCylinder();
+        if (cylinder != null) {
+            ps.add(cylinder);
+
+        }
+        showAllProducts();
     }
 
     private void onInfoClick() {
