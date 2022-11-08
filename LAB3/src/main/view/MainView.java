@@ -4,6 +4,7 @@ import javax.swing.*;
 
 import java.awt.event.*;
 
+import model.Cylinder;
 import model.Timber;
 import model.Wood;
 import store.*;
@@ -44,6 +45,7 @@ public class MainView extends JFrame {
 
         AddProductMenu.add(AddTimberMenu);
         AddProductMenu.add(AddCylinderMenu);
+        AddProductMenu.setText("Add Product");
 
         ShowWoodMenu.addActionListener(new ActionListener() {
             @Override
@@ -89,7 +91,14 @@ public class MainView extends JFrame {
 
     private void addCylinderDialog() {
         addCylinder ac = new addCylinder();
+        ac.setWoodDirectory(wd);
+        ac.setVisible(true);
+        Cylinder cylinder = ac.getCylinder();
+        if (cylinder != null) {
+            ps.add(cylinder);
 
+        }
+        showAllProducts();
     }
 
     private void onInfoClick() {
