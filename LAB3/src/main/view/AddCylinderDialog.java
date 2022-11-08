@@ -8,7 +8,7 @@ import model.Wood;
 import store.WoodDirectory;
 
 
-public class addCylinder extends JDialog {
+public class AddCylinderDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
@@ -18,7 +18,7 @@ public class addCylinder extends JDialog {
 
     private Cylinder cylinder;
 
-    public addCylinder() {
+    public AddCylinderDialog() {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
@@ -73,9 +73,7 @@ public class addCylinder extends JDialog {
         float radius = Float.parseFloat(radiusField.getText());
         float height = Float.parseFloat(HeightField.getText());
         Wood wood = (Wood) WoodSelect.getSelectedItem();
-        Cylinder cylinder = new Cylinder(wood, radius, height);
-
-
+        cylinder = new Cylinder(wood, radius, height);
         dispose();
     }
 
@@ -85,7 +83,7 @@ public class addCylinder extends JDialog {
     }
 
     public static void main(String[] args) {
-        addCylinder dialog = new addCylinder();
+        AddCylinderDialog dialog = new AddCylinderDialog();
         dialog.pack();
         System.exit(0);
     }

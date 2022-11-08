@@ -86,6 +86,12 @@
                   <text value="Timber"/>
                 </properties>
               </component>
+              <component id="cbd83" class="javax.swing.JMenuItem" binding="AddWasteDialog">
+                <constraints/>
+                <properties>
+                  <text value="Waste"/>
+                </properties>
+              </component>
             </children>
           </grid>
           <component id="43a72" class="javax.swing.JMenuItem" binding="Info">

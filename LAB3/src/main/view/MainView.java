@@ -25,6 +25,7 @@ public class MainView extends JFrame {
     private JMenuItem AddTimberMenu;
     private JMenuItem Info;
     private JMenuItem AddCylinderMenu;
+    private JMenuItem AddWasteDialog;
 
     private WoodDialog woodDialog;
 
@@ -45,6 +46,7 @@ public class MainView extends JFrame {
 
         AddProductMenu.add(AddTimberMenu);
         AddProductMenu.add(AddCylinderMenu);
+        AddProductMenu.add(AddWasteDialog);
         AddProductMenu.setText("Add Product");
 
         ShowWoodMenu.addActionListener(new ActionListener() {
@@ -85,18 +87,31 @@ public class MainView extends JFrame {
             }
         });
 
+        AddWasteDialog.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                addWasteDialog();
+            }
+        });
+    }
 
+    private void addWasteDialog() {
 
+        AddWasteDialog addWasteDialog = new AddWasteDialog();
+        addWasteDialog.setVisible(true);
+        if (addWasteDialog.getWaste() != null) {
+            ps.add(addWasteDialog.getWaste());
+        }
+        showAllProducts();
     }
 
     private void addCylinderDialog() {
-        addCylinder ac = new addCylinder();
+        AddCylinderDialog ac = new AddCylinderDialog();
         ac.setWoodDirectory(wd);
         ac.setVisible(true);
         Cylinder cylinder = ac.getCylinder();
         if (cylinder != null) {
             ps.add(cylinder);
-
         }
         showAllProducts();
     }
@@ -123,6 +138,8 @@ public class MainView extends JFrame {
 
     }
 
+
+    //wood menus
     protected void addWoodDialog() {
         woodDialog = new WoodDialog();
         woodDialog.setVisible(true);
