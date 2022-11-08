@@ -1,25 +1,16 @@
 package model;
 
-public class Timber {
+public class Timber extends AbstarctForm {
 
-    private Wood wood;
     private float length;
     private float width;
     private float height;
 
     public Timber(Wood wood, float length, float width, float height) {
-        this.wood = wood;
+        super(wood);
         this.length = length;
         this.width = width;
         this.height = height;
-    }
-
-    public Wood getWood() {
-        return wood;
-    }
-
-    public void setWood(Wood wood) {
-        this.wood = wood;
     }
 
     public float getLength() {
@@ -50,8 +41,8 @@ public class Timber {
         return length * width * height;
     }
 
-    public float weight() {
-        return volume() * wood.getDensity();
+    public String toString() {
+        return "Timber: " + wood + ", length: " + length + ", width: " + width + ", height: " + height;
     }
 
 }

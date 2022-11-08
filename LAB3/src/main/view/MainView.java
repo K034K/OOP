@@ -119,7 +119,7 @@ public class MainView extends JFrame {
         woodDialog.setVisible(true);
         Wood wood = woodDialog.getWood();
         if (wood != null) {
-            wd.addWood(wood);
+            wd.add(wood);
         }
         showWoodMenu();
     }
