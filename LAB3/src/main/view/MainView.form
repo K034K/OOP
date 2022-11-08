@@ -81,6 +81,12 @@
                   <text value="ShowAll"/>
                 </properties>
               </component>
+              <component id="80a78" class="javax.swing.JMenuItem" binding="AddCylinderMenu">
+                <constraints/>
+                <properties>
+                  <text value="Cylinder"/>
+                </properties>
+              </component>
             </children>
           </grid>
           <component id="43a72" class="javax.swing.JMenuItem" binding="Info">

@@ -23,6 +23,7 @@ public class MainView extends JFrame {
     private JMenu AddProductMenu;
     private JMenuItem AddTimberMenu;
     private JMenuItem Info;
+    private JMenuItem AddCylinderMenu;
 
     private WoodDialog woodDialog;
 
@@ -40,6 +41,9 @@ public class MainView extends JFrame {
         this.setSize(500, 500);
         this.setLocationRelativeTo(null);
         this.setTitle("MainView");
+
+        AddProductMenu.add(AddTimberMenu);
+        AddProductMenu.add(AddCylinderMenu);
 
         ShowWoodMenu.addActionListener(new ActionListener() {
             @Override
@@ -72,7 +76,19 @@ public class MainView extends JFrame {
                 showAllProducts();
             }
         });
+        AddCylinderMenu.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                addCylinderDialog();
+            }
+        });
 
+
+
+    }
+
+    private void addCylinderDialog() {
+        addCylinder ac = new addCylinder();
 
     }
 
