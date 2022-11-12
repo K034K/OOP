@@ -3,6 +3,8 @@ package view;
 import javax.swing.*;
 
 import java.awt.event.*;
+import java.io.*;
+import java.util.Date;
 
 import model.Cylinder;
 import model.Timber;
@@ -26,12 +28,17 @@ public class MainView extends JFrame {
     private JMenuItem Info;
     private JMenuItem AddCylinderMenu;
     private JMenuItem AddWasteDialog;
+    private JMenuItem StoreToFile;
+    private JMenuItem RestoreFromFile;
+    private JMenuItem ShowProtocol;
 
     private WoodDialog woodDialog;
 
 
     private WoodDirectory wd = new WoodDirectory();
     private ProductStore ps = new ProductStore();
+
+
 
     public MainView() {
         super("MainView");
@@ -48,6 +55,28 @@ public class MainView extends JFrame {
         AddProductMenu.add(AddCylinderMenu);
         AddProductMenu.add(AddWasteDialog);
         AddProductMenu.setText("Add Product");
+
+        File.add(StoreToFile);
+        File.add(RestoreFromFile);
+        File.add(ShowProtocol);
+
+        // File Protocol Buffered Writer
+        //We added when time and student who did it
+        Date date = new Date();
+        try {
+            BufferedWriter prot = new BufferedWriter(new FileWriter("protocol.txt", true));
+            prot.write("Mrynskiy Vladyslav ");
+            prot.write(date.toString());
+            prot.newLine();
+            prot.close();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+
+        // now we do it for all menu items
+
+
+        //Wood menu
 
         ShowWoodMenu.addActionListener(new ActionListener() {
             @Override
@@ -68,10 +97,14 @@ public class MainView extends JFrame {
                 addWoodDialog();
             }
         });
+
+
+        // Product Menu
         AddTimberMenu.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 addTimberDialog();
+                writeString("Timber added " + date.toString() + " \n" + ps.toString());
             }
         });
         ShowAllProductsMenu.addActionListener(new ActionListener() {
@@ -84,6 +117,7 @@ public class MainView extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 addCylinderDialog();
+                writeString("Cylinder added" + date.toString() + " \n" + ps.toString());
             }
         });
 
@@ -91,8 +125,102 @@ public class MainView extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 addWasteDialog();
+                writeString("Waste added " + date.toString() + " \n" + ps.toString());
+            }
+
+        });
+
+        //File menu
+        StoreToFile.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                storeToFile();
             }
         });
+
+        RestoreFromFile.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                restoreFromFile();
+            }
+
+        });
+
+        ShowProtocol.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    showProtocol();
+                } catch (FileNotFoundException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
+
+
+    }
+
+    private void writeString(String s) {
+        try {
+            BufferedWriter protocol = new BufferedWriter(new FileWriter("protocol.txt", true));
+            protocol.write(s);
+            protocol.newLine();
+            protocol.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void showProtocol() throws FileNotFoundException {
+        BufferedReader file = new BufferedReader(new FileReader("protocol.txt"));
+        try {
+            String line;
+            while ((line = file.readLine()) != null) {
+                Output.append(line);
+                Output.append("\n");
+            }
+            file.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void restoreFromFile() {
+        File filewd = new File("wd.object");
+        File fileps = new File("ps.object");
+        try {
+            FileInputStream fis = new FileInputStream(filewd);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            wd = (WoodDirectory) ois.readObject();
+            ois.close();
+            FileInputStream fis2 = new FileInputStream(fileps);
+            ObjectInputStream ois2 = new ObjectInputStream(fis2);
+            ps = (ProductStore) ois2.readObject();
+            ois2.close();
+
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void storeToFile() {
+        java.io.File file = new File("wd.object");
+        java.io.File file2 = new File("ps.object");
+        try {
+            FileOutputStream fos = new FileOutputStream(file);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+
+            oos.writeObject(wd);
+            oos.close();
+            FileOutputStream fos2 = new FileOutputStream(file2);
+            ObjectOutputStream oos2 = new ObjectOutputStream(fos2);
+            oos2.writeObject(ps);
+            oos2.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void addWasteDialog() {

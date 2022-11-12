@@ -1,6 +1,7 @@
 package model;
+import java.io.Serializable;
 
-public class Wood {
+public class Wood implements Serializable {
     private int id;
     private String name;
     private float density;

@@ -18,7 +18,7 @@ public class Timber extends AbstractForm {
     }
 
     public void setLength(float length)throws Exception {
-        if(length < 0.2f || length > 20.0f){
+        if(length < 0.2f || length > 100.0f){
             throw new Exception(length + " is not a valid length for timber" +
                     " (must be between 0.2 and 5.0)");
         }

@@ -1,6 +1,8 @@
 package model;
 
-public abstract class AbstractForm implements IWeight {
+
+
+public abstract class AbstractForm implements IWeight{
     protected Wood wood;
 
 

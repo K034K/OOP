@@ -100,6 +100,24 @@
               <text value="Info"/>
             </properties>
           </component>
+          <component id="9b938" class="javax.swing.JMenuItem" binding="StoreToFile">
+            <constraints/>
+            <properties>
+              <text value="Store"/>
+            </properties>
+          </component>
+          <component id="3988d" class="javax.swing.JMenuItem" binding="RestoreFromFile">
+            <constraints/>
+            <properties>
+              <text value="Restore"/>
+            </properties>
+          </component>
+          <component id="d0be3" class="javax.swing.JMenuItem" binding="ShowProtocol">
+            <constraints/>
+            <properties>
+              <text value="ShowProtocol"/>
+            </properties>
+          </component>
         </children>
       </grid>
       <grid id="cfdc6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">

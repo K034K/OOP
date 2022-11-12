@@ -1,8 +1,9 @@
 package store;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public abstract class AbstractStore {
+public abstract class AbstractStore implements Serializable {
     protected Object[] arr = new Object[3];
 
     protected int count = 0;
