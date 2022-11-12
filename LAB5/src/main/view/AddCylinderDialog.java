@@ -3,37 +3,32 @@ package view;
 import javax.swing.*;
 import java.awt.event.*;
 
-import model.Timber;
+import model.Cylinder;
 import model.Wood;
 import store.WoodDirectory;
 
-public class AddTimberDialog extends JDialog {
+
+public class AddCylinderDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JTextField Length;
-    private JTextField Height;
-
-    private JTextField Width;
-
+    private JTextField radiusField;
+    private JTextField HeightField;
     private JComboBox WoodSelect;
 
-    private Timber timber;
+    private Cylinder cylinder;
 
-    public Timber getTimber() {
-        return timber;
-    }
-
-    public AddTimberDialog() {
+    public AddCylinderDialog() {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
-        Length.setBorder(BorderFactory.createTitledBorder("Length,m"));
-        Height.setBorder(BorderFactory.createTitledBorder("Height,m"));
-        Width.setBorder(BorderFactory.createTitledBorder("Width,m"));
-        WoodSelect.setBorder(BorderFactory.createTitledBorder("Wood Selection"));
+
+        radiusField.setBorder(BorderFactory.createTitledBorder("Radius"));
+        HeightField.setBorder(BorderFactory.createTitledBorder("Height"));
+        WoodSelect.setBorder(BorderFactory.createTitledBorder("Wood Type"));
 
         setSize(500, 500);
+
 
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -72,14 +67,17 @@ public class AddTimberDialog extends JDialog {
         WoodSelect.setModel(model);
     }
 
+    public Cylinder getCylinder() {
+        return cylinder;
+    }
+
+
     private void onOK() throws Exception {
         // add your code here
-        float length = Float.parseFloat(Length.getText());
-        float height = Float.parseFloat(Height.getText());
-        float width = Float.parseFloat(Width.getText());
+        float radius = Float.parseFloat(radiusField.getText());
+        float height = Float.parseFloat(HeightField.getText());
         Wood wood = (Wood) WoodSelect.getSelectedItem();
-        timber = new Timber(wood, length, width, height);
-
+        cylinder = new Cylinder(wood, radius, height);
         dispose();
     }
 
@@ -89,7 +87,7 @@ public class AddTimberDialog extends JDialog {
     }
 
     public static void main(String[] args) {
-        AddTimberDialog dialog = new AddTimberDialog();
+        AddCylinderDialog dialog = new AddCylinderDialog();
         dialog.pack();
         System.exit(0);
     }

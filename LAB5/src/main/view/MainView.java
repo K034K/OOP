@@ -4,6 +4,7 @@ import javax.swing.*;
 
 import java.awt.event.*;
 
+import model.Cylinder;
 import model.Timber;
 import model.Wood;
 import store.*;
@@ -23,6 +24,8 @@ public class MainView extends JFrame {
     private JMenu AddProductMenu;
     private JMenuItem AddTimberMenu;
     private JMenuItem Info;
+    private JMenuItem AddCylinderMenu;
+    private JMenuItem AddWasteDialog;
 
     private WoodDialog woodDialog;
 
@@ -40,6 +43,11 @@ public class MainView extends JFrame {
         this.setSize(500, 500);
         this.setLocationRelativeTo(null);
         this.setTitle("MainView");
+
+        AddProductMenu.add(AddTimberMenu);
+        AddProductMenu.add(AddCylinderMenu);
+        AddProductMenu.add(AddWasteDialog);
+        AddProductMenu.setText("Add Product");
 
         ShowWoodMenu.addActionListener(new ActionListener() {
             @Override
@@ -72,8 +80,40 @@ public class MainView extends JFrame {
                 showAllProducts();
             }
         });
+        AddCylinderMenu.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                addCylinderDialog();
+            }
+        });
 
+        AddWasteDialog.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                addWasteDialog();
+            }
+        });
+    }
 
+    private void addWasteDialog() {
+
+        AddWasteDialog addWasteDialog = new AddWasteDialog();
+        addWasteDialog.setVisible(true);
+        if (addWasteDialog.getWaste() != null) {
+            ps.add(addWasteDialog.getWaste());
+        }
+        showAllProducts();
+    }
+
+    private void addCylinderDialog() {
+        AddCylinderDialog ac = new AddCylinderDialog();
+        ac.setWoodDirectory(wd);
+        ac.setVisible(true);
+        Cylinder cylinder = ac.getCylinder();
+        if (cylinder != null) {
+            ps.add(cylinder);
+        }
+        showAllProducts();
     }
 
     private void onInfoClick() {
@@ -98,6 +138,8 @@ public class MainView extends JFrame {
 
     }
 
+
+    //wood menus
     protected void addWoodDialog() {
         woodDialog = new WoodDialog();
         woodDialog.setVisible(true);

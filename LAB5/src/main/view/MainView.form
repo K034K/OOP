@@ -63,22 +63,33 @@
               <grid id="7c9ad" class="javax.swing.JMenu" binding="AddProductMenu" layout-manager="BorderLayout" hgap="0" vgap="0">
                 <constraints/>
                 <properties>
-                  <text value="Add"/>
+                  <text value="Add Product"/>
                 </properties>
                 <border type="none"/>
-                <children>
-                  <component id="d378c" class="javax.swing.JMenuItem" binding="AddTimberMenu">
-                    <constraints border-constraint="Center"/>
-                    <properties>
-                      <text value="Timber"/>
-                    </properties>
-                  </component>
-                </children>
+                <children/>
               </grid>
               <component id="6e4b5" class="javax.swing.JMenuItem" binding="ShowAllProductsMenu">
                 <constraints/>
                 <properties>
                   <text value="ShowAll"/>
+                </properties>
+              </component>
+              <component id="80a78" class="javax.swing.JMenuItem" binding="AddCylinderMenu">
+                <constraints/>
+                <properties>
+                  <text value="Cylinder"/>
+                </properties>
+              </component>
+              <component id="d378c" class="javax.swing.JMenuItem" binding="AddTimberMenu">
+                <constraints/>
+                <properties>
+                  <text value="Timber"/>
+                </properties>
+              </component>
+              <component id="cbd83" class="javax.swing.JMenuItem" binding="AddWasteDialog">
+                <constraints/>
+                <properties>
+                  <text value="Waste"/>
                 </properties>
               </component>
             </children>
