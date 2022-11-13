@@ -1,7 +1,6 @@
 package Store;
 
 import entitys.entity;
-import entitys.shop;
 
 public class AbstractStore {
 

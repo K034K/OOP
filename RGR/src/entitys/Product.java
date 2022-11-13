@@ -1,6 +1,6 @@
 package entitys;
 
-public class product extends entity{
+public class Product extends entity{
 
     private String description;
     private int price;
@@ -8,7 +8,7 @@ public class product extends entity{
     //constructor
 
 
-    public product(int id, String name, String description, int price) {
+    public Product(int id, String name, String description, int price) {
         super(id, name);
         this.description = description;
         this.price = price;

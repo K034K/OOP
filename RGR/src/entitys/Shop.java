@@ -1,10 +1,10 @@
 package entitys;
 
-public class shop extends entity{
+public class Shop extends entity{
 
     private String address;
 
-    public shop(int id, String name, String address) {
+    public Shop(int id, String name, String address) {
         super(id, name);
         this.address = address;
     }

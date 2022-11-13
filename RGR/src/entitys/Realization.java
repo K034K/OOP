@@ -1,16 +1,15 @@
 package entitys;
 
-import javax.xml.crypto.Data;
 import java.util.Date;
 
-public class realization extends entity{
+public class Realization extends entity{
     private int quantity;
     private int price;
     private Date date;
 
 
 
-    public realization(int id, int quantity, int price, Date date) {
+    public Realization(int id, int quantity, int price, Date date) {
         super(id, null);
         this.quantity = quantity;
         this.price = price;

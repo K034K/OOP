@@ -1,11 +1,11 @@
 package Store;
 
-import entitys.seller;
+import entitys.Seller;
 
 public class SellerStore extends AbstractStore {
 
     public SellerStore() {
-        super(seller.class);
+        super(Seller.class);
     }
 
     private ProductStore productStore = new ProductStore();

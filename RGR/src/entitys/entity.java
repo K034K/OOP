@@ -26,4 +26,11 @@ public class entity {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "entity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

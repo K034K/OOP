@@ -1,10 +1,10 @@
 package Store;
 
-import entitys.realization;
+import entitys.Realization;
 
 public class RealizationStore extends AbstractStore {
     public RealizationStore() {
-        super(realization.class);
+        super(Realization.class);
     }
 }
 
