@@ -2,14 +2,14 @@ package entitys;
 
 import java.util.Date;
 
-public class Realization extends entity{
+public class realization extends entity{
     private int quantity;
     private int price;
-    private Date date;
+    private Date date = new Date();
 
 
 
-    public Realization(int id, int quantity, int price, Date date) {
+    public realization(int id, int quantity, int price, Date date) {
         super(id, null);
         this.quantity = quantity;
         this.price = price;
@@ -50,4 +50,12 @@ public class Realization extends entity{
     public void setName(String name) {
     }
 
+    @Override
+    public String toString() {
+        return "Realization{" +
+                "quantity=" + quantity +
+                ", price=" + price +
+                ", date=" + date.getTime() +
+                '}';
+    }
 }

@@ -1,9 +1,9 @@
 package view;
 
-import entitys.Product;
-import entitys.Realization;
-import entitys.Seller;
-import entitys.Shop;
+import entitys.product;
+import entitys.realization;
+import entitys.seller;
+import entitys.shop;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
@@ -34,10 +34,10 @@ public class MainView {
     }
 
     protected TreeModel getShopsTreeModel() throws Exception {
-        Shop shop1 = new Shop(1, "Shop1", "Address1");
-        Seller seller1 = new Seller(1, "Seller1", "Surname1", "Address1", "Phone1", "Email1");
-        Product product1 = new Product(1, "Product1", "Description1", 1);
-        Realization realization1 = new Realization(1, 1, 1, null);
+        shop shop1 = new shop(1, "Shop1", "Address1");
+        seller seller1 = new seller(1, "Seller1", "Surname1", "Address1", "Phone1", "Email1");
+        product product1 = new product(1, "Product1", "Description1", 1);
+        realization realization1 = new realization(1, 1, 1, null);
 
         DefaultMutableTreeNode root = new DefaultMutableTreeNode(shop1);
         DefaultMutableTreeNode seller = new DefaultMutableTreeNode(seller1);

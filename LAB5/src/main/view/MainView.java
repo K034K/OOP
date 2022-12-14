@@ -38,7 +38,11 @@ public class MainView extends JFrame {
     private WoodDirectory wd = new WoodDirectory();
     private ProductStore ps = new ProductStore();
 
+    private Date date = new Date();
 
+    public String getDate() {
+        return date.toString();
+    }
 
     public MainView() {
         super("MainView");
@@ -62,11 +66,10 @@ public class MainView extends JFrame {
 
         // File Protocol Buffered Writer
         //We added when time and student who did it
-        Date date = new Date();
+
         try {
             BufferedWriter prot = new BufferedWriter(new FileWriter("protocol.txt", true));
-            prot.write("Mrynskiy Vladyslav ");
-            prot.write(date.toString());
+            prot.write("Mrynskiy Vladyslav  started working with program at " + date.toString() + "");
             prot.newLine();
             prot.close();
         } catch (IOException e1) {
@@ -104,7 +107,7 @@ public class MainView extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 addTimberDialog();
-                writeString("Timber added " + date.toString() + " \n" + ps.toString());
+                writeString("Timber added " );
             }
         });
         ShowAllProductsMenu.addActionListener(new ActionListener() {
@@ -117,7 +120,7 @@ public class MainView extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 addCylinderDialog();
-                writeString("Cylinder added" + date.toString() + " \n" + ps.toString());
+                writeString("Cylinder added ");
             }
         });
 
@@ -125,7 +128,7 @@ public class MainView extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 addWasteDialog();
-                writeString("Waste added " + date.toString() + " \n" + ps.toString());
+                writeString("Waste added ");
             }
 
         });
@@ -163,7 +166,7 @@ public class MainView extends JFrame {
     private void writeString(String s) {
         try {
             BufferedWriter protocol = new BufferedWriter(new FileWriter("protocol.txt", true));
-            protocol.write(s);
+            protocol.write(s +getDate() +"\n"+ ps.toString());
             protocol.newLine();
             protocol.close();
         } catch (IOException e) {
@@ -197,7 +200,6 @@ public class MainView extends JFrame {
             ObjectInputStream ois2 = new ObjectInputStream(fis2);
             ps = (ProductStore) ois2.readObject();
             ois2.close();
-
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -209,7 +211,6 @@ public class MainView extends JFrame {
         try {
             FileOutputStream fos = new FileOutputStream(file);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-
             oos.writeObject(wd);
             oos.close();
             FileOutputStream fos2 = new FileOutputStream(file2);
