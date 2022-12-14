@@ -1,0 +1,43 @@
+Mrynskiy Vladyslav Sat Nov 12 22:21:28 EET 2022
+Waste addedSat Nov 12 22:21:28 EET 2022 ProductStore: 
+Waste{weight=30.0}
+
+Cylinder addedSat Nov 12 22:21:28 EET 2022 ProductStore: 
+Waste{weight=30.0}
+Cylinder: Wood [id=2, name=Pine, density=800.0], radius: 0.2, height: 20.0
+
+Mrynskiy Vladyslav Sat Nov 12 22:25:10 EET 2022
+Timber added Sat Nov 12 22:25:10 EET 2022 
+ProductStore: 
+
+Timber added Sat Nov 12 22:25:10 EET 2022 
+ProductStore: 
+
+Mrynskiy Vladyslav Sat Nov 12 22:26:20 EET 2022
+Mrynskiy Vladyslav Sat Nov 12 22:26:22 EET 2022
+Mrynskiy Vladyslav Sat Nov 12 22:26:27 EET 2022
+Timber added Sat Nov 12 22:26:27 EET 2022 
+ProductStore: 
+Timber: Wood [id=1, name=Beech, density=750.0], length: 70.0, width: 0.3, height: 0.4
+
+Mrynskiy Vladyslav Sat Nov 12 23:18:37 EET 2022
+Timber added Sat Nov 12 23:18:37 EET 2022 
+ProductStore: 
+Waste{weight=100.0}
+Cylinder: Wood [id=2, name=Pine, density=0.0], radius: 0.4, height: 15.0
+Timber: Wood [id=5, name=Birch, density=0.0], length: 45.0, width: 0.35, height: 0.4
+
+Mrynskiy Vladyslav Sat Nov 12 23:19:19 EET 2022
+Mrynskiy Vladyslav Sat Nov 12 23:20:03 EET 2022
+Mrynskiy Vladyslav Sat Nov 12 23:20:50 EET 2022
+Mrynskiy Vladyslav Sun Nov 13 00:26:53 EET 2022
+Waste added Sun Nov 13 00:26:53 EET 2022 
+ProductStore: 
+Waste{weight=40.0}
+
+Mrynskiy Vladyslav Sun Nov 13 00:27:22 EET 2022
+Mrynskiy Vladyslav  started working with program at Sun Nov 13 18:52:20 EET 2022
+Waste added Sun Nov 13 18:52:20 EET 2022
+ProductStore: 
+Waste{weight=20.0}
+
