@@ -1,0 +1,185 @@
+Mrynskiy Vladyslav Thu Dec 15 21:07:42 EET 2022
+Mrynskiy Vladyslav Thu Dec 15 22:23:51 EET 2022
+Waste added Thu Dec 15 22:23:51 EET 2022 
+ProductStore: 
+Waste{weight=100.0}
+null
+null
+
+Waste added Thu Dec 15 22:23:51 EET 2022 
+ProductStore: 
+Waste{weight=100.0}
+Waste{weight=40.0}
+null
+
+Timber added Thu Dec 15 22:23:51 EET 2022 
+ProductStore: 
+Waste{weight=100.0}
+Waste{weight=40.0}
+Timber: Wood [id=0, name=Oak, density=1000.0], length: 20.0, width: 0.5, height: 0.3
+
+Waste added Thu Dec 15 22:23:51 EET 2022 
+ProductStore: 
+Waste{weight=40.0}
+Waste{weight=120.0}
+Timber: Wood [id=0, name=Oak, density=1000.0], length: 20.0, width: 0.5, height: 0.3
+
+Cylinder addedThu Dec 15 22:23:51 EET 2022 
+ProductStore: 
+Waste{weight=40.0}
+Waste{weight=120.0}
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.4, height: 80.0
+
+Timber added Thu Dec 15 22:23:51 EET 2022 
+ProductStore: 
+Waste{weight=40.0}
+Waste{weight=120.0}
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.4, height: 80.0
+Timber: Wood [id=0, name=Oak, density=1000.0], length: 90.0, width: 0.5, height: 0.2
+
+Long products moved
+Long products moved
+Mrynskiy Vladyslav Thu Dec 15 22:42:20 EET 2022
+Long products moved
+Mrynskiy Vladyslav Thu Dec 15 22:42:46 EET 2022
+Mrynskiy Vladyslav Thu Dec 15 22:44:41 EET 2022
+Mrynskiy Vladyslav Thu Dec 15 22:44:54 EET 2022
+Timber added Thu Dec 15 22:44:54 EET 2022 
+ProductStore: 
+Timber: Wood [id=0, name=Oak, density=1000.0], length: 120.0, width: 0.2, height: 0.3
+null
+null
+
+Cylinder addedThu Dec 15 22:44:54 EET 2022 
+ProductStore: 
+Timber: Wood [id=0, name=Oak, density=1000.0], length: 120.0, width: 0.2, height: 0.3
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.3, height: 100.0
+null
+
+Waste added Thu Dec 15 22:44:54 EET 2022 
+ProductStore: 
+Timber: Wood [id=0, name=Oak, density=1000.0], length: 120.0, width: 0.2, height: 0.3
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.3, height: 100.0
+Waste{weight=122.0}
+
+Waste added Thu Dec 15 22:44:54 EET 2022 
+ProductStore: 
+Timber: Wood [id=0, name=Oak, density=1000.0], length: 120.0, width: 0.2, height: 0.3
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.3, height: 100.0
+Waste{weight=122.0}
+Waste{weight=150.0}
+
+Mrynskiy Vladyslav Thu Dec 15 22:48:40 EET 2022
+Waste added Thu Dec 15 22:48:40 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+
+Waste added Thu Dec 15 22:48:40 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Waste{weight=150.0}
+
+Waste added Thu Dec 15 22:48:40 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Waste{weight=150.0}
+Waste{weight=100.0}
+
+Timber added Thu Dec 15 22:48:40 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Waste{weight=150.0}
+Waste{weight=100.0}
+Timber: Wood [id=0, name=Oak, density=1000.0], length: 100.0, width: 0.2, height: 0.3
+
+Cylinder addedThu Dec 15 22:48:40 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Waste{weight=150.0}
+Waste{weight=100.0}
+Timber: Wood [id=0, name=Oak, density=1000.0], length: 100.0, width: 0.2, height: 0.3
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.3, height: 100.0
+
+Cylinder addedThu Dec 15 22:48:40 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Waste{weight=150.0}
+Waste{weight=100.0}
+Timber: Wood [id=0, name=Oak, density=1000.0], length: 100.0, width: 0.2, height: 0.3
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.3, height: 100.0
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.2, height: 50.0
+
+Mrynskiy Vladyslav Thu Dec 15 22:57:37 EET 2022
+Waste added Thu Dec 15 22:57:37 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+
+Cylinder addedThu Dec 15 22:57:37 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.3, height: 80.0
+
+Cylinder addedThu Dec 15 22:57:37 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.3, height: 80.0
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.4, height: 60.0
+
+Waste added Thu Dec 15 22:57:37 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.3, height: 80.0
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.4, height: 60.0
+
+Timber added Thu Dec 15 22:57:37 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.3, height: 80.0
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.4, height: 60.0
+Timber: Wood [id=0, name=Oak, density=1000.0], length: 90.0, width: 0.4, height: 0.3
+
+Mrynskiy Vladyslav Thu Dec 15 23:09:46 EET 2022
+Waste added Thu Dec 15 23:09:46 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+
+Waste added Thu Dec 15 23:09:46 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Waste{weight=80.0}
+
+Waste added Thu Dec 15 23:09:46 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Waste{weight=80.0}
+Waste{weight=90.0}
+
+Mrynskiy Vladyslav Thu Dec 15 23:11:01 EET 2022
+Waste added Thu Dec 15 23:11:01 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+
+Waste added Thu Dec 15 23:11:01 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Waste{weight=100.0}
+
+Waste added Thu Dec 15 23:11:01 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Waste{weight=100.0}
+Waste{weight=85.0}
+
+Cylinder addedThu Dec 15 23:11:01 EET 2022 
+ProductStore: 
+Waste{weight=120.0}
+Waste{weight=100.0}
+Waste{weight=85.0}
+Cylinder: Wood [id=0, name=Oak, density=1000.0], radius: 0.4, height: 100.0
+
+Timber added Thu Dec 15 23:11:01 EET 2022 
+ProductStore: 
+Waste{weight=100.0}
+Waste{weight=85.0}
+Timber: Wood [id=0, name=Oak, density=1000.0], length: 90.0, width: 0.2, height: 0.5
+
