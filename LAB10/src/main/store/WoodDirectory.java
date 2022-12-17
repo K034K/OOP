@@ -28,10 +28,8 @@ public class WoodDirectory extends AbstractStore {
     }
 
     public String toString() {
-        StringBuilder result = new StringBuilder();
-        result.append("Wood Directory: \n");
-        result.append(super.toString());
-        return result.toString();
+        return "Wood Directory: \n" +
+                set.toString().replace("[", "").replace("]", "").replace(",", "\n");
     }
 
     {

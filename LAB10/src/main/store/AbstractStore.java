@@ -10,7 +10,7 @@ import java.util.function.Predicate;
 
 public abstract class AbstractStore implements Iterable<Object>, Serializable, Collection<Object> {
 
-    private List<Object> list = new ArrayList<Object>();
+    private final List<Object> list = new ArrayList<Object>();
     protected Object[] arr = new Object[3];
 
     protected int count = 0;
@@ -32,11 +32,10 @@ public abstract class AbstractStore implements Iterable<Object>, Serializable, C
 
     public String toString() {
         StringBuilder result = new StringBuilder();
-        System.out.println(list.toString());
         for(Object obj : list) {
             result.append(obj.toString());
             result.append("\n");
-            System.out.println(obj.toString());
+
         }
         return result.toString();
     }

@@ -25,10 +25,8 @@ public class ProductStore extends AbstractStore {
     }
 
     public String toString() {
-        StringBuilder result = new StringBuilder();
-        result.append("Product Store: \n");
-        result.append(super.toString());
-        return result.toString();
+        return "Product Store: \n" +
+                list.toString().replace("[", "").replace("]", "").replace(",", "\n");
     }
 
     //event listeners
