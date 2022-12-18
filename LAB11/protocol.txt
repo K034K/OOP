@@ -1,0 +1,218 @@
+Mrynskiy Vladyslav Sun Dec 18 16:54:41 EET 2022
+Cylinder addedSun Dec 18 16:54:41 EET 2022 
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+
+Cylinder addedSun Dec 18 16:54:41 EET 2022 
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+
+Timber added Sun Dec 18 16:54:41 EET 2022 
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.2, height: 0.4 1
+
+Waste added Sun Dec 18 16:54:41 EET 2022 
+Waste{weight=100.0} 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.2, height: 0.4 1
+
+Waste added Sun Dec 18 16:54:41 EET 2022 
+Waste{weight=100.0} 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.2, height: 0.4 1
+Waste{weight=120.0} 1
+
+Waste added Sun Dec 18 16:54:41 EET 2022 
+Waste{weight=100.0} 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.2, height: 0.4 1
+Waste{weight=120.0} 1
+Waste{weight=100.0} 1
+
+Waste added Sun Dec 18 16:54:41 EET 2022 
+Waste{weight=100.0} 1
+Waste{weight=120.0} 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.2, height: 0.4 1
+Waste{weight=120.0} 1
+Waste{weight=100.0} 1
+
+Cylinder addedSun Dec 18 16:54:41 EET 2022 
+Waste{weight=100.0} 1
+Waste{weight=120.0} 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.2, height: 0.4 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 1
+Waste{weight=120.0} 1
+Waste{weight=100.0} 1
+
+Mrynskiy Vladyslav Sun Dec 18 17:20:50 EET 2022
+Waste added Sun Dec 18 17:20:50 EET 2022 
+Products:
+Waste{weight=100.0} quantity: 1
+
+Waste added Sun Dec 18 17:20:50 EET 2022 
+Products:
+Waste{weight=100.0} quantity: 1
+Waste{weight=100.0} quantity: 1
+
+Mrynskiy Vladyslav Sun Dec 18 17:34:12 EET 2022
+Waste added Sun Dec 18 17:34:12 EET 2022 
+Products:
+
+Waste added Sun Dec 18 17:34:12 EET 2022 
+Products:
+
+Mrynskiy Vladyslav Sun Dec 18 17:39:18 EET 2022
+Waste added Sun Dec 18 17:39:18 EET 2022 
+Products:
+
+Mrynskiy Vladyslav Sun Dec 18 17:39:37 EET 2022
+Waste added Sun Dec 18 17:39:37 EET 2022 
+Products:
+
+Mrynskiy Vladyslav Sun Dec 18 17:41:26 EET 2022
+Waste added Sun Dec 18 17:41:26 EET 2022 
+Products:
+
+Waste added Sun Dec 18 17:41:26 EET 2022 
+Products:
+
+Mrynskiy Vladyslav Sun Dec 18 17:45:05 EET 2022
+Mrynskiy Vladyslav Sun Dec 18 17:45:11 EET 2022
+Waste added Sun Dec 18 17:45:11 EET 2022 
+Products:
+
+Mrynskiy Vladyslav Sun Dec 18 17:45:24 EET 2022
+Waste added Sun Dec 18 17:45:24 EET 2022 
+Products:
+
+Mrynskiy Vladyslav Sun Dec 18 17:45:39 EET 2022
+Waste added Sun Dec 18 17:45:39 EET 2022 
+Products:
+
+Mrynskiy Vladyslav Sun Dec 18 17:49:04 EET 2022
+Waste added Sun Dec 18 17:49:04 EET 2022 
+Products:
+Waste{weight=100.0} quantity: 1
+
+Waste added Sun Dec 18 17:49:04 EET 2022 
+Products:
+Waste{weight=100.0} quantity: 2
+
+Timber added Sun Dec 18 17:49:04 EET 2022 
+Products:
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.4, height: 0.3 quantity: 1
+Waste{weight=100.0} quantity: 2
+
+Cylinder addedSun Dec 18 17:49:04 EET 2022 
+Products:
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.4, height: 0.3 quantity: 1
+Waste{weight=100.0} quantity: 2
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 quantity: 1
+
+Cylinder addedSun Dec 18 17:49:04 EET 2022 
+Products:
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.4, height: 0.3 quantity: 1
+Waste{weight=100.0} quantity: 2
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 quantity: 2
+
+Waste added Sun Dec 18 17:49:04 EET 2022 
+Products:
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.4, height: 0.3 quantity: 1
+Waste{weight=100.0} quantity: 3
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 quantity: 2
+
+Mrynskiy Vladyslav Sun Dec 18 18:11:34 EET 2022
+Waste added Sun Dec 18 18:11:34 EET 2022 
+Products:
+Waste{weight=100.0} quantity: 1
+
+Timber added Sun Dec 18 18:11:34 EET 2022 
+Products:
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.2, height: 0.3 quantity: 1
+Waste{weight=100.0} quantity: 1
+
+Cylinder addedSun Dec 18 18:11:34 EET 2022 
+Products:
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.2, height: 0.3 quantity: 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 quantity: 1
+Waste{weight=100.0} quantity: 1
+
+Cylinder addedSun Dec 18 18:11:34 EET 2022 
+Products:
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.2, height: 0.3 quantity: 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 quantity: 1
+Waste{weight=100.0} quantity: 1
+
+Mrynskiy Vladyslav Sun Dec 18 18:12:13 EET 2022
+Mrynskiy Vladyslav Sun Dec 18 18:14:05 EET 2022
+Waste added Sun Dec 18 18:14:05 EET 2022 
+Products:
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 quantity: 1
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.2, height: 0.3 quantity: 1
+Waste{weight=100.0} quantity: 2
+
+Mrynskiy Vladyslav Sun Dec 18 18:14:38 EET 2022
+Waste added Sun Dec 18 18:14:38 EET 2022 
+Products:
+Waste{weight=120.0} quantity: 1
+
+Cylinder addedSun Dec 18 18:14:38 EET 2022 
+Products:
+Waste{weight=120.0} quantity: 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 quantity: 1
+
+Mrynskiy Vladyslav Sun Dec 18 18:19:21 EET 2022
+Waste added Sun Dec 18 18:19:21 EET 2022 
+Products:
+Waste{weight=100.0} quantity: 1
+
+Cylinder addedSun Dec 18 18:19:21 EET 2022 
+Products:
+Waste{weight=100.0} quantity: 1
+
+Mrynskiy Vladyslav Sun Dec 18 18:25:47 EET 2022
+Waste added Sun Dec 18 18:25:47 EET 2022 
+Products:
+Waste{weight=100.0} quantity: 1
+
+Cylinder addedSun Dec 18 18:25:47 EET 2022 
+Products:
+Waste{weight=100.0} quantity: 1
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 quantity: 1
+
+Mrynskiy Vladyslav Sun Dec 18 18:28:25 EET 2022
+Waste added Sun Dec 18 18:28:25 EET 2022 
+Products:
+Waste{weight=100.0} quantity: 1
+
+Cylinder addedSun Dec 18 18:28:25 EET 2022 
+Products:
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 quantity: 1
+Waste{weight=100.0} quantity: 1
+
+Waste added Sun Dec 18 18:28:25 EET 2022 
+Products:
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 quantity: 1
+Waste{weight=100.0} quantity: 2
+
+Waste added Sun Dec 18 18:28:25 EET 2022 
+Products:
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 quantity: 1
+Waste{weight=100.0} quantity: 2
+Waste{weight=120.0} quantity: 1
+
+Timber added Sun Dec 18 18:28:25 EET 2022 
+Products:
+Cylinder: Wood [id=0, name=Дуб, density=0.7], radius: 0.3, height: 100.0 quantity: 1
+Timber: Wood [id=0, name=Дуб, density=0.7], length: 100.0, width: 0.4, height: 0.3 quantity: 1
+Waste{weight=100.0} quantity: 2
+Waste{weight=120.0} quantity: 1
+
+Mrynskiy Vladyslav Sun Dec 18 18:29:44 EET 2022

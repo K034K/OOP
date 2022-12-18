@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.MainView">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="ce42f" class="javax.swing.JMenuBar" binding="menuBar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="7eb40" class="javax.swing.JMenu" binding="File" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints/>
+            <properties>
+              <text value="File"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="e9f8e" class="javax.swing.JMenu" binding="WoodMenu" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints/>
+            <properties>
+              <text value="Wood"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="8c9a9" class="javax.swing.JMenuItem" binding="AddWoodMenu">
+                <constraints/>
+                <properties>
+                  <text value="Add"/>
+                </properties>
+              </component>
+              <component id="6c541" class="javax.swing.JMenuItem" binding="DeleteWoodMenu">
+                <constraints/>
+                <properties>
+                  <text value="Delete"/>
+                </properties>
+              </component>
+              <component id="ef369" class="javax.swing.JMenuItem" binding="EditWoodMenu">
+                <constraints/>
+                <properties>
+                  <text value="Edit"/>
+                </properties>
+              </component>
+              <component id="11e75" class="javax.swing.JMenuItem" binding="ShowWoodMenu">
+                <constraints/>
+                <properties>
+                  <text value="Show"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="eaa35" class="javax.swing.JMenu" binding="ProductMenu" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints/>
+            <properties>
+              <text value="Product"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="7c9ad" class="javax.swing.JMenu" binding="AddProductMenu" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints/>
+                <properties>
+                  <text value="Add Product"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <component id="6e4b5" class="javax.swing.JMenuItem" binding="ShowAllProductsMenu">
+                <constraints/>
+                <properties>
+                  <text value="ShowAll"/>
+                </properties>
+              </component>
+              <component id="80a78" class="javax.swing.JMenuItem" binding="AddCylinderMenu">
+                <constraints/>
+                <properties>
+                  <text value="Cylinder"/>
+                </properties>
+              </component>
+              <component id="d378c" class="javax.swing.JMenuItem" binding="AddTimberMenu">
+                <constraints/>
+                <properties>
+                  <text value="Timber"/>
+                </properties>
+              </component>
+              <component id="cbd83" class="javax.swing.JMenuItem" binding="AddWasteDialog">
+                <constraints/>
+                <properties>
+                  <text value="Waste"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="43a72" class="javax.swing.JMenuItem" binding="Info">
+            <constraints/>
+            <properties>
+              <text value="Info"/>
+            </properties>
+          </component>
+          <component id="9b938" class="javax.swing.JMenuItem" binding="StoreToFile">
+            <constraints/>
+            <properties>
+              <text value="Store"/>
+            </properties>
+          </component>
+          <component id="3988d" class="javax.swing.JMenuItem" binding="RestoreFromFile">
+            <constraints/>
+            <properties>
+              <text value="Restore"/>
+            </properties>
+          </component>
+          <component id="d0be3" class="javax.swing.JMenuItem" binding="ShowProtocol">
+            <constraints/>
+            <properties>
+              <text value="ShowProtocol"/>
+            </properties>
+          </component>
+          <grid id="a0d9e" class="javax.swing.JMenu" binding="EventMenu" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints/>
+            <properties>
+              <text value="Event"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="823fd" class="javax.swing.JMenuItem" binding="AddListenerMenu">
+                <constraints/>
+                <properties>
+                  <text value="Add Listener"/>
+                </properties>
+              </component>
+              <component id="5b8e9" class="javax.swing.JMenuItem" binding="RemoveListenerMenu">
+                <constraints/>
+                <properties>
+                  <text value="Remove Listener"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="f0bcc" class="javax.swing.JMenu" binding="Lambda" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints/>
+            <properties>
+              <text value="Lambda"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="c34a8" class="javax.swing.JMenuItem" binding="OverweightProductsMenu">
+                <constraints/>
+                <properties>
+                  <text value="Overweight Products"/>
+                </properties>
+              </component>
+              <component id="b94bd" class="javax.swing.JMenuItem" binding="RemoveOverweightMenu">
+                <constraints/>
+                <properties>
+                  <text value="Remove Overweight"/>
+                </properties>
+              </component>
+              <component id="77601" class="javax.swing.JMenuItem" binding="MoveLongMenu">
+                <constraints/>
+                <properties>
+                  <text value="MoveLong"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="cfdc6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="8992f">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="bc943" class="javax.swing.JTextArea" binding="Output">
+                <constraints/>
+                <properties>
+                  <editable value="false"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
