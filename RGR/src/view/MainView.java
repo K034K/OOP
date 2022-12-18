@@ -8,6 +8,8 @@ import entitys.Shop;
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeModel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class MainView {
     private JTree ShopsTree;
@@ -19,14 +21,35 @@ public class MainView {
     private JButton StoreButton;
     private JButton restoreButton;
     private JButton calculateButton;
+    private JButton InfoButton;
 
     public MainView() {
         JFrame frame = new JFrame("MainView");
+        //add margins to ShopsTree
+        ShopsTree.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+
         frame.setContentPane(panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
         onWindowOpened();
+
+        //InfoButton action
+
+        InfoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                onInfoClick();
+            }
+        });
+    }
+
+    private void onInfoClick() {
+        Info info = new Info();
+        info.setVisible(true);
+
     }
 
     public static void main(String[] args) {
