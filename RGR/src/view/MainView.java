@@ -8,6 +8,7 @@ import entitys.Shop;
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeModel;
+import javax.swing.tree.TreeNode;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -44,6 +45,22 @@ public class MainView {
                 onInfoClick();
             }
         });
+        AddButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                onAddClick();
+            }
+        });
+
+    }
+
+    private void onAddClick() {
+        DefaultMutableTreeNode selectedNode = getSelectedNode();
+        if (selectedNode == null || selectedNode.getUserObject() instanceof Realization) {
+            return;
+        }
+
+
     }
 
     private void onInfoClick() {
@@ -75,6 +92,10 @@ public class MainView {
         return (new JTree(root)).getModel();
     }
 
+    private DefaultMutableTreeNode getSelectedNode() {
+        return (DefaultMutableTreeNode) ShopsTree.getLastSelectedPathComponent();
+    }
+
     protected void onWindowOpened() {
        try{
            ShopsTree.setModel(getShopsTreeModel());
@@ -85,5 +106,7 @@ public class MainView {
            e.printStackTrace();
        }
     }
+
+    
 
 }

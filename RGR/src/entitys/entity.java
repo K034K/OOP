@@ -1,6 +1,6 @@
 package entitys;
 
-public class entity {
+public abstract class entity {
     private int id;
 
     public entity(int id, String name) {
