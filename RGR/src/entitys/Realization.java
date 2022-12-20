@@ -5,17 +5,13 @@ import java.time.format.DateTimeFormatter;
 
 public class Realization extends entity{
     private int quantity;
-    private int price;
-    private String date;
+    private double price;
 
-    private DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm");
-    private LocalDateTime now = LocalDateTime.now();
-
-    public Realization(int id, int quantity, int price, LocalDateTime date) {
+    public Realization(int id, int quantity, double price) {
         super(id, null);
         this.quantity = quantity;
         this.price = price;
-        this.date = dtf.format(now);
+
     }
 
     public int getQuantity() {
@@ -26,7 +22,7 @@ public class Realization extends entity{
         this.quantity = quantity;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -34,9 +30,6 @@ public class Realization extends entity{
         this.price = price;
     }
 
-    public String getDate() {
-        return date;
-    }
 
     @Override
     public String getName(){
@@ -52,7 +45,7 @@ public class Realization extends entity{
         return "Realization{" +
                 "quantity=" + quantity +
                 ", price=" + price +
-                ", date=" + date +
+
                 '}';
     }
 

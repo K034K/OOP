@@ -1,6 +1,8 @@
 package entitys;
 
-public class entity {
+import java.io.Serializable;
+
+public abstract class entity implements Serializable {
     private int id;
 
     public entity(int id, String name) {

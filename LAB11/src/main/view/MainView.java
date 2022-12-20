@@ -350,7 +350,6 @@ public class MainView extends JFrame {
             ObjectOutputStream oos = new ObjectOutputStream(fos);
 
             oos.writeObject(wd);
-            oos.writeObject(wd);
             oos.close();
             FileOutputStream fos2 = new FileOutputStream(file2);
             ObjectOutputStream oos2 = new ObjectOutputStream(fos2);

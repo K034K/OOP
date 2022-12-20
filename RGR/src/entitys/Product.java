@@ -3,12 +3,12 @@ package entitys;
 public class Product extends entity{
 
     private String description;
-    private int price;
+    private double price;
 
     //constructor
 
 
-    public Product(int id, String name, String description, int price) {
+    public Product(int id, String name, String description, double price) {
         super(id, name);
         this.description = description;
         this.price = price;
@@ -23,7 +23,7 @@ public class Product extends entity{
         this.description = description;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
