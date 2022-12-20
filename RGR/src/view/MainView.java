@@ -7,6 +7,7 @@ import entitys.Shop;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.MutableTreeNode;
 import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreeNode;
 import java.awt.event.ActionEvent;
@@ -77,9 +78,49 @@ public class MainView {
             }
         });
 
+        EditButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                onEditClick();
+            }
+        });
+    }
+
+    private void onEditClick() {
+        DefaultMutableTreeNode selectedNode = getSelectedNode();
+        if (selectedNode == null) {
+            JOptionPane.showMessageDialog(null, "Select node");
+            return;
+        }
+
+        if(selectedNode.getUserObject() instanceof Shop) {
+            ShopDialog dialog = new ShopDialog((Shop) selectedNode.getUserObject());
+            dialog.setVisible(true);
+            selectedNode.setUserObject(dialog.getShop());
+            ShopsTree.updateUI();
+        }else if(selectedNode.getUserObject() instanceof Seller){
+            SellerDialog dialog = new SellerDialog((Seller) selectedNode.getUserObject());
+            dialog.setVisible(true);
+            selectedNode.setUserObject(dialog.getSeller());
+            ShopsTree.updateUI();
+        }else if(selectedNode.getUserObject() instanceof Product){
+            ProductDialog dialog = new ProductDialog((Product) selectedNode.getUserObject());
+            dialog.setVisible(true);
+            selectedNode.setUserObject(dialog.getProduct());
+            ShopsTree.updateUI();
+        }else if(selectedNode.getUserObject() instanceof Realization){
+            RealizationDialog dialog = new RealizationDialog((Realization) selectedNode.getUserObject());
+            dialog.setVisible(true);
+            selectedNode.setUserObject(dialog.getRealization());
+            ShopsTree.updateUI();
+        }
+
     }
 
     private void onDeleteClick() {
+        DefaultMutableTreeNode selectedNode = getSelectedNode();
+        selectedNode.removeFromParent();
+        ShopsTree.updateUI();
 
     }
 
@@ -135,7 +176,7 @@ public class MainView {
     //adding nodes to tree
     private void onAddClick() {
         DefaultMutableTreeNode selectedNode = getSelectedNode();
-        if (selectedNode == null || selectedNode.getUserObject() instanceof Realization) {
+        if (selectedNode.getUserObject() instanceof Realization) {
             return;
         }
         if (selectedNode.getUserObject() instanceof Shop) {
@@ -168,7 +209,16 @@ public class MainView {
                 ShopsTree.updateUI();
             }
         }
-
+        if (selectedNode.getUserObject()==null) {
+            ShopDialog dialog = new ShopDialog();
+            dialog.pack();
+            dialog.setVisible(true);
+            Shop shop = dialog.getShop();
+            if (shop != null) {
+                selectedNode.add(new DefaultMutableTreeNode(shop));
+                ShopsTree.updateUI();
+            }
+        }
 
     }
 

@@ -10,12 +10,21 @@ public class ProductDialog extends AbstractDialog {
     JTextField descriptionField = new JTextField();
     JTextField priceField = new JTextField();
 
-    Product product;
+    private Product product;
 
     public ProductDialog() {
         //structure
         setProduct();
 
+        pack();
+        //end structure
+    }
+
+    public ProductDialog(Product product) {
+        //structure
+        this();
+        setProduct();
+        setProductDialog(product);
         pack();
         //end structure
     }
@@ -31,7 +40,7 @@ public class ProductDialog extends AbstractDialog {
         return product;
     }
 
-    public void setProduct() {
+    private void setProduct() {
 
         descriptionField.setBorder(BorderFactory.createTitledBorder("Description"));
         priceField.setBorder(BorderFactory.createTitledBorder("Price"));
@@ -44,6 +53,13 @@ public class ProductDialog extends AbstractDialog {
 
     }
 
+    private void setProductDialog(Product product) {
+        this.product = product;
+        getIdField().setText(String.valueOf(product.getId()));
+        getNameField().setText(product.getName());
+        descriptionField.setText(product.getDescription());
+        priceField.setText(String.valueOf(product.getPrice()));
+    }
 
     public static void main(String[] args) {
         ProductDialog dialog = new ProductDialog();

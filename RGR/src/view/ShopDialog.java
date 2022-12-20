@@ -8,16 +8,35 @@ import javax.swing.*;
 public class ShopDialog extends AbstractDialog{
 
 
-    Shop shop;
+    private Shop shop;
 
     JTextField addressField = new JTextField();
     public ShopDialog() {
 
         //structure
-        addressField.setBorder(BorderFactory.createTitledBorder("Address"));
-        getMainContent().add(addressField);
+        setShop();
         pack();
         //end structure
+    }
+    public void setShop(){
+        addressField.setBorder(BorderFactory.createTitledBorder("Address"));
+        getMainContent().add(addressField);
+    }
+
+    public void setShopDialog(Shop shop){
+        this.shop = shop;
+        addressField.setText(shop.getAddress());
+        getNameField().setText(shop.getName());
+        getIdField().setText(String.valueOf(shop.getId()));
+    }
+
+    public ShopDialog(Shop shop) {
+        this();
+        this.shop = shop;
+        setShop();
+        setShopDialog(shop);
+        pack();
+
     }
 
     @Override
@@ -25,7 +44,10 @@ public class ShopDialog extends AbstractDialog{
         shop = new Shop(Integer.parseInt(getIdField().getText()), getNameField().getText(), addressField.getText());
         dispose();
 
+    }
 
+    public Shop getShop() {
+        return shop;
     }
 
     public static void main(String[] args) {

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5fea401-bda3-408a-8cd6-f8ea325cf42f" name="Changes" comment="" />
+    <list default="true" id="c5fea401-bda3-408a-8cd6-f8ea325cf42f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +22,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Projects/JAVA/OOP/LAB3"
+    "last_opened_file_path": "/home/k03ak/IdeaProjects/OOP/RGR",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -32,6 +36,10 @@
       <option name="presentableId" value="Default" />
       <updated>1667250385536</updated>
       <workItem from="1667250386944" duration="20000" />
+      <workItem from="1671362892671" duration="22000" />
+      <workItem from="1671566272549" duration="140000" />
+      <workItem from="1671566429593" duration="110000" />
+      <workItem from="1671566557556" duration="140000" />
     </task>
     <servers />
   </component>
