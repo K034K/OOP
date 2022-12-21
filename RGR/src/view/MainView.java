@@ -7,12 +7,14 @@ import entitys.Shop;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.MutableTreeNode;
 import javax.swing.tree.TreeModel;
-import javax.swing.tree.TreeNode;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.io.*;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class MainView {
     private JTree ShopsTree;
@@ -25,8 +27,9 @@ public class MainView {
     private JButton restoreButton;
     private JButton calculateButton;
     private JButton InfoButton;
+    private JPopupMenu popup;
+    private JMenuItem CalculateAllRealization;
 
-    private TreeModel treeModel;
 
     public MainView() {
         JFrame frame = new JFrame("MainView");
@@ -82,6 +85,41 @@ public class MainView {
             @Override
             public void actionPerformed(ActionEvent e) {
                 onEditClick();
+            }
+        });
+        addPopup(calculateButton, popup);
+        CalculateAllRealization.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                onCalculateAllRealizationClick();
+            }
+        });
+    }
+
+    private void onCalculateAllRealizationClick() {
+        AtomicReference<Double> sum = new AtomicReference<>((double) 0);
+
+        DefaultMutableTreeNode root = (DefaultMutableTreeNode) ShopsTree.getModel().getRoot();
+        root.children().asIterator().forEachRemaining(shop -> {
+            ((DefaultMutableTreeNode) shop).children().asIterator().forEachRemaining(seller -> {
+                ((DefaultMutableTreeNode) seller).children().asIterator().forEachRemaining(realization -> {
+                    sum.updateAndGet(v -> (double) (v + ((Realization) ((DefaultMutableTreeNode) realization).getUserObject()).getPrice()));
+                });
+            });
+        });
+        JOptionPane.showMessageDialog(null, "Sum of all realization is " + sum);
+    }
+
+    private static void addPopup(Component component, final JPopupMenu popup) {
+        component.addMouseListener(new MouseAdapter() {
+            public void mousePressed(MouseEvent e) {
+                    showMenu(e);
+
+            }
+
+
+            private void showMenu(MouseEvent e) {
+                popup.show(e.getComponent(), e.getX(), e.getY());
             }
         });
     }
