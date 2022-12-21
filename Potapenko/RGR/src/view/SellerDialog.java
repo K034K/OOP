@@ -11,7 +11,7 @@ public class SellerDialog extends AbstractDialog {
     JTextField phoneField = new JTextField();
     JTextField emailField = new JTextField();
 
-    Seller seller;
+    private Seller seller;
 
     public SellerDialog() {
         //structure
@@ -19,6 +19,14 @@ public class SellerDialog extends AbstractDialog {
 
         pack();
         //end structure
+    }
+
+    public SellerDialog(Seller seller) {
+        this();
+        this.seller = seller;
+        setSeller();
+        setSellerDialog(seller);
+        pack();
     }
 
     @Override
@@ -42,6 +50,15 @@ public class SellerDialog extends AbstractDialog {
         mainContent.setBorder(BorderFactory.createTitledBorder("Seller"));
     }
 
+    private void setSellerDialog(Seller seller) {
+        this.seller = seller;
+        surnameField.setText(seller.getSurname());
+        addressField.setText(seller.getAddress());
+        phoneField.setText(seller.getPhone());
+        emailField.setText(seller.getEmail());
+        getNameField().setText(seller.getName());
+        getIdField().setText(String.valueOf(seller.getId()));
+    }
     public Seller getSeller() {
         return seller;
     }

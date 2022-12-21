@@ -10,7 +10,7 @@ public class RealizationDialog extends AbstractDialog {
     JTextField quantityField = new JTextField();
     JTextField priceField = new JTextField();
 
-    Realization realization;
+    private Realization realization;
 
     public RealizationDialog() {
         //structure
@@ -19,6 +19,14 @@ public class RealizationDialog extends AbstractDialog {
 
         pack();
         //end structure
+    }
+
+    public RealizationDialog(Realization realization) {
+        this();
+        this.realization = realization;
+        setRealiztionFields();
+        setRealizationDialog(realization);
+        pack();
     }
 
     @Override
@@ -49,7 +57,12 @@ public class RealizationDialog extends AbstractDialog {
 
     }
 
-
+    private void setRealizationDialog(Realization realization) {
+        this.realization = realization;
+        quantityField.setText(String.valueOf(realization.getQuantity()));
+        priceField.setText(String.valueOf(realization.getPrice()));
+        getIdField().setText(String.valueOf(realization.getId()));
+    }
     public static void main(String[] args) {
         RealizationDialog dialog = new RealizationDialog();
         dialog.pack();
